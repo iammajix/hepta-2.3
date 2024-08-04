@@ -1,0 +1,360 @@
+.header {
+    position: relative;
+    padding: 46px 146px;
+}
+.header .logo a {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../pic/hero1.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    position: relative;
+}
+.hero-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    background: black ;
+    opacity: 0.2;
+}
+.header .hamberger-menu  {
+    width:  38px;
+    height: 23px;
+    position: relative;
+    cursor: pointer;
+}
+.header .hamberger-menu span {
+    background: #fff;
+    width: 100%;
+    height: 2px;
+}
+.hero-section .hero-section-content {
+    position: absolute ;
+    top :50% ;
+    left :50% ;
+    transform:translate(-50% , -52%) ;
+    text-align: center;
+}
+.hero-section .hero-section-content h1 {
+    color: #fff;
+    font-size: 80px;
+    margin: -17px;
+}
+.hero-section .hero-section-content p {
+    color: #fff;
+    font-weight: 200;
+    font-size: 3rem;
+}
+.hero-section .hero-section-content p a {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: solid 2px rgba(255, 255, 255, 0.1);
+    transition: all 0.2S;
+}
+.hero-section .hero-section-content p a:hover {
+    color: #fff ;
+    border-bottom: solid 2px #fff ;
+}
+.hero-section .scroll {
+    position: absolute ;
+    bottom: 10px ;
+    left :50% ;
+    transform:translatex(-50%) ;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.hero-section .scroll i {
+    transform: rotate(90deg);
+}
+.hero-section .scroll span {
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+.motion-img{
+    animation-name: jamal;
+    animation-duration: 3s;
+    position:relative;
+    top: 0;
+    left: 0;
+}
+@keyframes jamal {
+    0%{
+        top: 350px;
+        left: 0;
+    }
+}
+.welcome .right{
+    padding-left: 3rem;
+}
+.welcome img {
+    width: 100%;
+    height: auto;
+}
+.welcome h2 {
+    font-size: 3.2rem;
+    padding-bottom: 15px;
+    font-weight: 200;
+}
+.welcome .watch-video a {
+    gap: 15px;
+    color: #65c0ba;
+    padding-top: 24px;
+}
+.welcome .watch-video .play {
+    border:1px solid  #6c757d;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.4s;
+}
+.welcome .watch-video .play:hover {
+    color :black;
+    border:1px solid  black
+}
+.welcome .watch-video .play:before {
+    top:50%;
+    left:50%;
+    transform: translate(-32%, -50%);
+    position: absolute;
+}
+.welcome .watch-video span {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.section-heading .title {
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+.section-heading .description {
+    font-size: 1.9rem;
+    font-weight: 300;
+    padding-bottom: 60px;
+}
+.experience-down img {
+    width: 70px;
+    height: auto;
+}
+.experience-down h3 {
+    font-size: 2.8rem;
+    font-weight: 200;
+}
+
+.international .slider {
+    position: relative;
+}
+.international .slider img {
+    width: 100%;
+    height: auto;
+}
+.international .pagination {
+    position: absolute;
+    left :50%;
+    bottom: 60px;
+    transform: translatex(-50%);
+}
+.international .pagination ul {
+    display: flex;
+    gap:10px
+}
+.international .pagination ul li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.international .pagination ul li.active {
+    background: transparent;
+}
+.international .slider .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+.international .slider .arrow.next {
+    right: 0;
+    margin-right: -60px;
+    font-size: 4rem;
+}
+.international .slider .arrow.prev {
+    left: 0;
+    margin-left: -60px;
+    font-size: 4rem;
+}
+.blog {
+    position: relative;
+}
+.blog::before{
+    content: "";
+    background-color:  #65c0ba;
+    width: 120%;
+    height: 600px;
+    transform: rotate(-4deg) translatey(-500px);
+    position: absolute;
+    z-index: -1;
+}
+.blog .blog-heading p {
+    color: #ffffffb3;
+    
+}
+.blog .blog-content {
+    background: #fff;
+    padding: 50px 30px 10px;
+    min-height: 350px;
+}
+.blog .blog-content .date {
+    padding: 0;
+    color: #ced4da;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.blog-content .title {
+    display: block;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+}
+.customers .customers-footer img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 17px;
+}
+.customers .customers-footer p.athuer {
+    position: relative;
+    padding-left: 22px;
+    color: #6c757d;
+}
+.customers .customers-footer p {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.customers .customers-footer p.athuer:before {
+    content: '—';
+    position: absolute;
+    left: 0;
+}
+.destination-down .destination-img img {
+    width: 100%;
+    height: a;
+    margin-bottom: 1rem;
+}
+.destination-down .destination-img h3 {
+    font-weight: 200;
+    font-size: 1.9rem;
+    line-height: 1.1;
+}
+.destination-down .destination-rate ul li {
+    display: inline-block;
+    font-size: 1rem;
+    color: #65c0ba;
+    padding:2px;
+  
+}
+.destination-down .destination-rate ul li i:hover {
+    font-weight: bold;
+    font-size: 1.2rem;  
+}
+.destination-down .destination-rate .viwe p {
+    padding: 0;
+    color: #cccccc;
+    font-style: italic;
+}
+.footer .q-link ul li {
+    padding-bottom: 10px;  
+}
+.footer .q-link ul li a {
+    color: #ffffffb3;
+}
+.footer .q-link ul li h3 {
+    padding-bottom: 10px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.9rem;
+}
+.footer .q-link-txt h3 {
+    padding-bottom: 20px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.9rem;
+}
+.footer .q-link-txt .title {
+    font-style: italic;
+    color: #fff;
+    padding-bottom: 0;
+}
+.footer .q-link-txt .context {
+    color: #ffffff80;
+
+}
+.footer .end-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 80px;
+}
+.footer .end-footer p {
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer .icon ul li {
+   text-align: center; 
+   display: inline-block;
+}
+.footer .icon ul li a {
+    padding:10px;
+    color: rgba(255, 255, 255, 0.7);
+    display:inline-block;
+    text-align: center;
+    transition: all 0.5s;
+}
+.footer .icon ul li a:hover {
+    color: #fff;
+}
+.footer .Subscribe{
+    position: relative;
+}
+.footer .Subscribe input{
+    background: none;
+    border: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 45px 16px 10px;
+    font-size: 0.9rem;
+    width: 100%;
+    transition: all 0.5s;
+    font-family:"Mukta Mahee", arial, sans-serif;
+}
+.footer .Subscribe input:focus{
+    border-color: #fff;
+}
+.footer .Subscribe input::placeholder{
+    color: rgba(255, 255, 255, 0.2);
+    font-style: italic;
+}
+.footer .Subscribe button{
+    position: absolute;
+    background: none;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.9rem;
+    right: 25px;
+    top: 50%;
+    transform: translatey(-50%);  
+}
